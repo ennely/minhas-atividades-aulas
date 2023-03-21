@@ -1,0 +1,21 @@
+.containe-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 25%;
+    margin:0 ;
+}
+.imgCard img{
+    width: 10rem;
+    height: 10rem;
+}
+.texto{
+    text-align: justify;
+    padding: 1rem;
+}

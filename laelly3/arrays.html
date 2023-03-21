@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrays
+        const carros = ['fusca', 'bmw', 'corolla']//criando um array
+        //ou
+        const frutas = new Array('maça', 'laranja', 'banana')
+        
+        const teste = new Array(1, 4, 100)
+        const teste1 = new Array(100);
+        console.log(carros[0])//acessando elementos do Array INDICES COMEÇAM NO 0
+        carros[0] = 'marea' //mudando valores
+        console.log(carros[0])
+
+        frutas.push("limão") //adiciona novo elemento em frutas
+        console.log(frutas)
+
+        frutas.pop()//remove o último elemento
+        console.log(frutas)
+
+        console.log(carros.length)//tamanho do Array
+        console.log(carros.sort())//orderna o array
+
+        for(let i=0; i<frutas.length; i++){
+            console.log(frutas[i])
+        }
+        //ou
+        frutas.forEach((element)=>{
+            console.log(element)
+        })
+        setInterval(() => {
+            console.log("essa mensagem aparece a cada 2 seg")
+        }, 2000)
+
+        //nesse exemplo crio uma função normal
+        function msg(){
+            console.log("asadasdsad")
+        }
+           setInterval(msg, 2000)
+//nesse exemplo crio uma função anônima
+setInterval(function(){
+    console.log("afafast")
+}, 2000)
+
+const pessoa = { mome: "jose", sobrenome: "sousa", idade: 40} //Array associativo "chave: valor"
+console.log(pessoa.nome)
+
+
+
+    </script>
+
+</body>
+</html>

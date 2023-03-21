@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt("qual seu nome?")
+        console.log("Prazer, " + nome)
+        console.log('Prazer, $(nome)')
+
+        var numero = 0//tipo number
+        var num = "0"//tipo string
+
+        console.log(numero == num)//compara valores
+        console.log(numero === num)//compara valores e tipos
+
+        var idade = 17
+        if (idade >= 18 && idade < 70) {
+            console.log("voto obrigatório")
+        } else if ((idade >= 16 && idade < 18) || idade >= 70) {
+            console.log("opcional")
+        }
+        else {
+            console.log("não vota")
+        }
+
+        let corfavorita = 'verde'
+    
+
+        switch (corfavorita) {
+            case 'azul':
+                console.log("cor favorita é azul")
+                break
+            case 'verde':
+                console.log("cor favorita é verde")
+                break
+            default:
+                console.log("cor inválida")
+        }
+        for(let i=0; i< 10; i++){
+            console.log(i)
+        }
+
+
+    </script>
+</body>
+
+</html>
